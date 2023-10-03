@@ -1,10 +1,19 @@
+:root {
+    --color-base: midnightblue;
+    --color1: magenta;
+    --color2: aqua;
+    --espacio: 20px;
+    --cuadrados: 40px;
+    --radio: 40px;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
 header{
-    background-color: midnightblue;
+    background-color: var(--color-base);
     margin: 0px;
     display: flex;
     justify-content: space-between; 
@@ -12,16 +21,16 @@ header{
 }
 
 .item1{
-    width: 30px;
-    height: 30px;
-    background-color: magenta;
+    width: var(--cuadrados);
+    height: var(--cuadrados);
+    background-color: var(--color1);
     margin: 10px;
 }
 .item2{
-    background-color: aqua;
+    background-color:var(--color2);
 }
 .item3{
-    border-radius: 20px;
+    border-radius: var(--radio);
 }
 
 
@@ -34,15 +43,15 @@ article{
 }
 .article1{
     margin: 10px;
-    width: 30px;
-    height: 30px;
+    width: var(--cuadrados);
+    height: var(--cuadrados);
     background-color: rgb(239, 190, 239);
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    margin: 20px;
+    margin: var(--espacio);
     margin-top: 60px;
  
 }
@@ -53,8 +62,8 @@ nav ul li{
 
 
 footer{
-    background-color: rgb(33, 17, 174);
-    padding: 20px;
+    background-color: var(--color-base);
+    padding: var(--espacio);
     margin: 0px;
     display:flex;
     justify-content: center;
@@ -92,7 +101,7 @@ footer{
     background-color: blue;
   }
   .btn:hover{
-    background-color: rgb(8, 20, 112);
+    background-color: var(--color-base);
   }
 
   .caja2{
@@ -103,12 +112,12 @@ footer{
     grid-gap:10px;
   }
   .rect1{
-    padding: 20px;
+    padding: var(--espacio);
     background-color: blue;
   }
 .caja3{
     margin: -20px;
-    padding: 20px;
+    padding: var(--espacio);
  /*    background-color: rgb(195, 157, 101); */
      
 }
