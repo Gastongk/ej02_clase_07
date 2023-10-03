@@ -138,8 +138,12 @@ footer{
     animation-direction: alternate;
  }
  @keyframes mover {
-    
-    0%{right: 0;}
-    100% { right: 93%; }
-   
+  0% {
+      right: 0;
+      transform: scaleX(1); /* Sin espejado */
+  }
+  100% {
+      right: 93%;
+      transform: scaleX(-1); /* Espejado horizontal */
+  }
 }
